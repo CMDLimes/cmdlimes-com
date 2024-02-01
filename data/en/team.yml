@@ -1,0 +1,32 @@
+enable  : true
+topTitle: TEAM MEMBERS
+title   : Meet the co-founders
+subtitle: In their free time, our three co-founders contribute to the global Python community writing code, serving in elected Open Source positions, mentoring, and organizing events.
+
+member  :
+  - image         : images/team/cheuk.jpeg
+    name          : Cheuk Ting Ho
+    designation   : Lead Software Engineer
+    description   : >
+      London, United Kingdom
+    twitterURL    : https://twitter.com/cheukting_ho
+    linkedinURL   : https://www.linkedin.com/in/cheukting-ho
+    mastodonURL   : https://fosstodon.org/@cheukting_ho
+
+  - image         : images/team/mariatta.jpeg
+    name          : Mariatta Wijaya
+    designation   : Lead Software Engineer
+    description   : >
+      Vancouver, Canada
+    twitterURL    : https://twitter.com/mariatta
+    linkedinURL   : https://www.linkedin.com/in/mariatta/
+    mastodonURL   : https://fosstodon.org/@mariatta
+
+  - image         : images/team/dawn.png
+    name          : Dawn Wages
+    designation   : DevOps & Software Engineer
+    description   : >
+      Philadelphia, USA
+    twitterURL    : https://twitter.com/BajoranEngineer
+    linkedinURL   : https://www.linkedin.com/in/dawnwages/
+    mastodonURL   : https://mastodon.online/@bajoranengineer

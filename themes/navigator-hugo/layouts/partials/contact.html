@@ -1,0 +1,124 @@
+{{ if .Site.Params.contact.enable }}
+{{ "<!-- Start Contact Us -->" | safeHTML }}
+<section class="contact-us section bg-gray" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.contact.topTitle }}<h4>{{.}}</h4>{{ end }}
+                    {{ with .Site.Params.contact.title }}
+                    <h2>{{.}}</h2>
+                    <span class="border"></span>
+                    {{ end }}
+                    <p>
+                        Write to us at <a href="mailto:contact@cmdlimes.com">contact@cmdlimes.com</a>
+                    </p>
+<!--                    {{ with .Site.Params.contact.subtitle }}<p>{{.}}</p>{{ end }}-->
+                </div>
+            </div>
+        </div>
+<!--        <div class="row">-->
+<!--            {{ "&lt;!&ndash; Contact Details &ndash;&gt;" | safeHTML }}-->
+<!--&lt;!&ndash;            <div class="col-12 col-md-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="map">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            {{ "&lt;!&ndash; Contact Form &ndash;&gt;" | safeHTML }}-->
+<!--&lt;!&ndash;            <div class="contact-form col-12 col-md-12 ">&ndash;&gt;-->
+<!--&lt;!&ndash;                <form id="contact-form" method="post" action="sendmail.php" role="form">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div id="mail-success" class="success">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Thank you. The Mailman is on His Way :)&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div id="mail-fail" class="error">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Sorry, don't know what happened. Try later :(&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div id="cf-submit">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </form>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 col-md-4">-->
+<!--                <div class="address-block contact-meta-block">-->
+<!--                    <i class="tf-ion-android-pin"></i>-->
+<!--                    <h4>Our Location</h4>-->
+<!--                    {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4">-->
+<!--                <div class="phone-block contact-meta-block">-->
+<!--                    <i class="tf-ion-ios-telephone"></i>-->
+<!--                    <h4>Call Us</h4>-->
+<!--                    <p>-->
+<!--                         {{ with .Site.Params.contact.phone }}Office: {{.}} {{ end }} -->
+<!--                        <br> {{ with .Site.Params.contact.fax }} Fax: {{ . }} {{ end }}-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;            <div class="col-12 col-md-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="social-icons-block contact-meta-block">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="tf-ion-ios-contact"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h4>Connect with us</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="list-inline social-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ with .Site.Params.contact.facebook }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <i class="tf-ion-social-facebook"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ with .Site.Params.contact.twitter }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <i class="tf-ion-social-twitter"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ with .Site.Params.contact.linkedin }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <i class="tf-ion-social-linkedin"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ with .Site.Params.contact.dribbble }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <i class="tf-ion-social-dribbble"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ with .Site.Params.contact.instagram }}&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <i class="tf-ion-social-instagram"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--        </div>-->
+    </div>
+</section>
+{{ end }}
