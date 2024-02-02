@@ -19,7 +19,7 @@ DefaultContentLanguage = "en"
 
 # Site Params
 [params]
-logo = "images/logo7.png"
+logo = "images/lime_438_x_175.png"
 
 
 # meta data
@@ -37,7 +37,7 @@ languageCode = "en-us"
 title = "CMD Limes Python Consultants"
 dateFormat = "January 2, 2006"
 home = "Home"
-logo = "images/logo7.png"
+logo = "images/lime_438_x_175.png"
 menufixed = false
 
 #footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
