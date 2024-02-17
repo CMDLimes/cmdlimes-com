@@ -1,13 +1,19 @@
-enable  : false
+enable  : true
 item    :
   - positionRight : false
-    image : images/about/about-1.jpg
-    title : Creativity is in our blood
+    image : images/about/story-coop.png
+    title : We are a Co-op, we are a community
     description : >
-      Curabitur felis nibh, imperdiet eu erat non, luctus cursus lectus. Donec maximus diam leo, sed fringilla nisl auctor eget. Donec dictum neque est, ac faucibus ex blandit a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quo minima ab aperiam molestiae natus repellendus neque culpa iure, nemo veritatis explicabo facilis, officia, saepe! Et corrupti odit, non deserunt.
+      Co-ops are owned by the people closest to the business, not distant investors only interested in a financial return. We respect everyone's opinion thus our governing body is democratically elected. While bureaucracy and treachery are minimal, our community is driven by those who care deeply about the community and for the benefit of everyone. We care for each other, but we also care about diversity, inclusivity, equality and accessibility.
 
   - positionRight : true
-    image : images/about/about-2.jpg
-    title : We think out of the Box
+    image : images/about/story-woman-leader.png
+    title : We are underrepresented
     description : >
-      Curabitur felis nibh, imperdiet eu erat non, luctus cursus lectus. Donec maximus diam leo, sed fringilla nisl auctor eget. Donec dictum neque est, ac faucibus ex blandit a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quo minima ab aperiam molestiae natus repellendus neque culpa iure, nemo veritatis explicabo facilis, officia, saepe! Et corrupti odit, non deserunt.
+      We are the underdog of the tech industry, not because of our abilities, but because of social stereotypes and bias. We empower underrepresented folks to break this boundary and to show the world we are just as good given the right environment. We nurture future talents in underrepresented communities to become future leaders of the industry.
+
+  - positionRight : false
+    image : images/about/story-open-source.png
+    title : We are Open Source contributors
+    description : >
+      We are from the open source community, and years of experience enhance our good practices and provide us with deep knowledge of open source software. We understand how open source works and maintain good relationships with maintainers and leaders in the open source communities. We love open collaboration and advances in technology. We are planning to give back to the community when we can.
