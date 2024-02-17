@@ -118,7 +118,17 @@
                    </ul>
                </div>
            </div>
-<!--        </div>-->
-    </div>
+              <div class="col-12 col-md-4">
+                  <div class="coop-block contact-meta-block">
+                      <i class="tf-ion-checkmark-circled"></i>
+                      <h4>Registered Co-op</h4>
+                      <p>
+                           UK Company House Registration
+                          <br> {{ with .Site.Params.contact.regnum }} Number: {{ . }} {{ end }}
+                      </p>
+                  </div>
+              </div>
+       </div>
+    <!-- </div> -->
 </section>
 {{ end }}
