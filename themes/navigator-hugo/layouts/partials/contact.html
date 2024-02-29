@@ -10,9 +10,7 @@
                     <h2>{{.}}</h2>
                     <span class="border"></span>
                     {{ end }}
-                    <p>
-                        Write to us at <a href="mailto:contact@cmdlimes.com">contact@cmdlimes.com</a>
-                    </p>
+
 <!--                    {{ with .Site.Params.contact.subtitle }}<p>{{.}}</p>{{ end }}-->
                 </div>
             </div>
@@ -75,6 +73,15 @@
 <!--                    </p>-->
 <!--                </div>-->
 <!--            </div>-->
+           <div class="col-12 col-md-4">
+               <div class="email-block contact-meta-block">
+                   <i class="tf-ion-email"></i>
+                   <h4>Email Us</h4>
+                   <p>
+                        {{ with .Site.Params.contact.email }}<a href="mailto:{{.}}"> {{.}} </a>{{ end }}
+                   </p>
+               </div>
+           </div>
             <div class="col-12 col-md-4">
                <div class="social-icons-block contact-meta-block">
                     <i class="tf-ion-ios-contact"></i>
@@ -118,7 +125,7 @@
                    </ul>
                </div>
            </div>
-           <div class="col-12 col-md-4">
+           <!-- <div class="col-12 col-md-4">
               <div class="coop-block contact-meta-block">
                   <i class="tf-ion-checkmark-circled"></i>
                   <h4>Registered Co-op</h4>
@@ -127,7 +134,7 @@
                       <br> {{ with .Site.Params.contact.regnum }} Number: {{ . }} {{ end }}
                   </p>
               </div>
-          </div>
+          </div> -->
        </div>
     <!-- </div> -->
 </section>
