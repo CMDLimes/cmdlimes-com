@@ -10,9 +10,7 @@
                     <h2>{{.}}</h2>
                     <span class="border"></span>
                     {{ end }}
-                    <p>
-                        Write to us at <a href="mailto:contact@cmdlimes.com">contact@cmdlimes.com</a>
-                    </p>
+
 <!--                    {{ with .Site.Params.contact.subtitle }}<p>{{.}}</p>{{ end }}-->
                 </div>
             </div>
@@ -57,14 +55,14 @@
 <!--&lt;!&ndash;                </form>&ndash;&gt;-->
 <!--&lt;!&ndash;            </div>&ndash;&gt;-->
 <!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-12 col-md-4">-->
-<!--                <div class="address-block contact-meta-block">-->
-<!--                    <i class="tf-ion-android-pin"></i>-->
-<!--                    <h4>Our Location</h4>-->
-<!--                    {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}-->
-<!--                </div>-->
-<!--            </div>-->
+       <div class="row">
+           <div class="col-12 col-md-4">
+               <div class="address-block contact-meta-block">
+                   <i class="tf-ion-android-pin"></i>
+                   <h4>Our Location</h4>
+                   {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
+               </div>
+           </div>
 <!--            <div class="col-12 col-md-4">-->
 <!--                <div class="phone-block contact-meta-block">-->
 <!--                    <i class="tf-ion-ios-telephone"></i>-->
@@ -75,50 +73,69 @@
 <!--                    </p>-->
 <!--                </div>-->
 <!--            </div>-->
-<!--&lt;!&ndash;            <div class="col-12 col-md-4">&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="social-icons-block contact-meta-block">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <i class="tf-ion-ios-contact"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <h4>Connect with us</h4>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <ul class="list-inline social-icon">&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ with .Site.Params.contact.facebook }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <i class="tf-ion-social-facebook"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ with .Site.Params.contact.twitter }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <i class="tf-ion-social-twitter"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ with .Site.Params.contact.linkedin }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <i class="tf-ion-social-linkedin"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ with .Site.Params.contact.dribbble }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <i class="tf-ion-social-dribbble"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ with .Site.Params.contact.instagram }}&ndash;&gt;-->
-<!--&lt;!&ndash;                        <li class="list-inline-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="{{.}}">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <i class="tf-ion-social-instagram"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                        {{ end }}&ndash;&gt;-->
-<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--        </div>-->
-    </div>
+           <div class="col-12 col-md-4">
+               <div class="email-block contact-meta-block">
+                   <i class="tf-ion-email"></i>
+                   <h4>Email Us</h4>
+                   <p>
+                        {{ with .Site.Params.contact.email }}<a href="mailto:{{.}}"> {{.}} </a>{{ end }}
+                   </p>
+               </div>
+           </div>
+            <div class="col-12 col-md-4">
+               <div class="social-icons-block contact-meta-block">
+                    <i class="tf-ion-ios-contact"></i>
+                    <h4>Connect with us</h4>
+                    <ul class="list-inline social-icon">
+                        {{ with .Site.Params.contact.facebook }}
+                        <li class="list-inline-item">
+                            <a href="{{.}}">
+                                <i class="tf-ion-social-facebook"></i>
+                            </a>
+                        </li>
+                        {{ end }}
+                        {{ with .Site.Params.contact.twitter }}
+                        <li class="list-inline-item">
+                            <a href="{{.}}">
+                                <i class="tf-ion-social-twitter"></i>
+                            </a>
+                        </li>
+                        {{ end }}
+                        {{ with .Site.Params.contact.linkedin }}
+                        <li class="list-inline-item">
+                            <a href="{{.}}">
+                               <i class="tf-ion-social-linkedin"></i>
+                           </a>
+                       </li>
+                       {{ end }}
+                       {{ with .Site.Params.contact.dribbble }}
+                       <li class="list-inline-item">
+                           <a href="{{.}}">
+                               <i class="tf-ion-social-dribbble"></i>
+                           </a>
+                       </li>
+                       {{ end }}
+                       {{ with .Site.Params.contact.instagram }}
+                       <li class="list-inline-item">
+                           <a href="{{.}}">
+                               <i class="tf-ion-social-instagram"></i>
+                           </a>
+                       </li>
+                       {{ end }}
+                   </ul>
+               </div>
+           </div>
+           <!-- <div class="col-12 col-md-4">
+              <div class="coop-block contact-meta-block">
+                  <i class="tf-ion-checkmark-circled"></i>
+                  <h4>Registered Co-op</h4>
+                  <p>
+                       UK Company House Registration
+                      <br> {{ with .Site.Params.contact.regnum }} Number: {{ . }} {{ end }}
+                  </p>
+              </div>
+          </div> -->
+       </div>
+    <!-- </div> -->
 </section>
 {{ end }}
