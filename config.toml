@@ -111,11 +111,11 @@ btnText = "Contact Us"
 # Navbar Menus
 [[menu.nav]]
 name = "about"
-url = "/#about"
+url = "#about"
 weight = 2
 [[menu.nav]]
 name = "team"
-url = "/#team"
+url = "#team"
 weight = 3
 #[[menu.nav]]
 #name = "portfolio"
@@ -127,7 +127,7 @@ weight = 3
 #weight = 5
 [[menu.nav]]
 name = "contact"
-url = "/#contact"
+url = "#contact"
 weight = 6
 
 # Footer Service Menu
